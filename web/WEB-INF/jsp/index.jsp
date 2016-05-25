@@ -3,16 +3,15 @@
 <%@include file="../header.jsp" %>
 <%--<jsp:include page="../header.jsp"></jsp:include>--%>
 <h1>Student List</h1>
-<div class="pull-right">
-    <p>
-        <a href="${SITE_URL}/add" class="btn btn-primary">
-            <span class="glyphicon glyphicon-plus"/>
-        </a> 
-    </p>
-</div>
+
 
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover">
+        <div class="pull-right">
+            <a href="${SITE_URL}/add" class="btn btn-success">
+                <span class="glyphicon glyphicon-plus"/>
+            </a> 
+        </div>
         <thead>
             <tr>
                 <th>Name</th>
@@ -35,7 +34,7 @@
                         <a href="${pageContext.request.contextPath}/edit?id=${s.id}" class="btn btn-info">
                             <span class="glyphicon glyphicon-pencil"/>
                         </a>
-                        <a href="${pageContext.request.contextPath}/delete?id=${s.id}" class="btn btn-danger">
+                        <a href="${pageContext.request.contextPath}/delete?id=${s.id}" class="btn btn-danger" onclick="return confirm('DELETE! Are You sure???')>
                             <span class="glyphicon glyphicon-remove"/>
                         </a>
                     </td>
@@ -44,15 +43,6 @@
         </c:forEach>
     </table>
 </div>
-            <script>
-                $document.on('ready',function(){
-                    $('.btn-danger').on('click',function(){
-                        if(confirm('Do you want to Delete?')===false){
-                            return false;
-                        }
-                    });
-                });
-            </script>
 
 <%@include file="../footer.jsp" %>
 <%--<jsp:include page="../footer.jsp"></jsp:include>--%>
