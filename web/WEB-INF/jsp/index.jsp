@@ -34,8 +34,8 @@
                         <a href="${pageContext.request.contextPath}/edit?id=${s.id}" class="btn btn-info">
                             <span class="glyphicon glyphicon-pencil"/>
                         </a>
-                        <a href="${pageContext.request.contextPath}/delete?id=${s.id}" class="btn btn-danger" onclick="return confirm('DELETE! Are You sure???')>
-                            <span class="glyphicon glyphicon-remove"/>
+                        <a href="${pageContext.request.contextPath}/delete?id=${s.id}" class="btn btn-danger" onclick="return confirm('DELETE! Are You sure???')">
+                            <span class="glyphicon glyphicon-trash"/>
                         </a>
                     </td>
                 </tr>
