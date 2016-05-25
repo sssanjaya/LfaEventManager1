@@ -29,7 +29,7 @@ public class DefaultController {
 
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView index() {
-        // studentService.insert(new Student(0, "abc", "Kathmandu", "abc@gmail.com", "leapfrog", false));
+         //studentService.insert(new Student(0, "abc", "Kathmandu", "abc@gmail.com", "leapfrog", false));
         ModelAndView mv = new ModelAndView("index");
         mv.addObject("students", studentService.getAll());
         return mv;
