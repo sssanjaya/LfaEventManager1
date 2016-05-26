@@ -2,7 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@include file="../header.jsp" %>
 <%--<jsp:include page="../header.jsp"></jsp:include>--%>
-<h1>Student List</h1>
+<h3>Student List</h3>
 
 
 <div class="table-responsive">
