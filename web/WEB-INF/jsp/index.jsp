@@ -6,7 +6,7 @@
 
 
 <div class="table-responsive">
-    <table class="table table-bordered table-striped table-hover">
+    <table id="tableDemo" class="table table-bordered table-striped table-bordered">
         <div class="pull-right">
             <a href="${SITE_URL}/add" class="btn btn-success">
                 <span class="glyphicon glyphicon-plus"/>
@@ -29,7 +29,16 @@
                     <td>${s.address}</td>
                     <td>${s.email}</td>
                     <td>${s.college}</td>
-                    <td>${s.status}</td>
+                    <td>
+                        <c:choose>
+                            <c:when test="${s.status}">
+                                <span class="label label-success">Active</span>
+                            </c:when>
+                            <c:otherwise>
+                                <span class="label label-danger">Inactive</span>
+                            </c:otherwise>
+                        </c:choose>
+                    </td>
                     <td>
                         <a href="${pageContext.request.contextPath}/edit?id=${s.id}" class="btn btn-info">
                             <span class="glyphicon glyphicon-pencil"/>

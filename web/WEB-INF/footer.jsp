@@ -20,7 +20,23 @@
 <!-- Bootstrap 3.3.6 -->
 <script src="${SITE_URL}/assets/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src='${SITE_URL}/assets/dist/js/app.min.js'></script>
+<script src="${SITE_URL}/assets/dist/js/app.min.js"></script>
+<!--Data Table-->
+<!--<script src="assets/dist/js/"></script>-->
+<script src="${SITE_URL}/assets/dist/js/dataTables.bootstrap.min.js"></script>
+<script src="${SITE_URL}/assets/dist/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" class="init">
+    $(function () {
+        $('#tableDemo').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": false,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

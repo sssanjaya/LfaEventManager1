@@ -12,7 +12,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>AdminLTE 2 | Starter</title>
+        <title>LFA Events</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.6 -->
@@ -27,8 +27,9 @@
               page. However, you can choose any other skin. Make sure you
               apply the skin class to the body tag so the changes take effect.
         -->
+        <link rel="stylesheet" href="${SITE_URL}/assets/dist/css/_all-skins.min.css">
         <link rel="stylesheet" href="${SITE_URL}/assets/dist/css/skins/skin-blue.min.css">
-
+        <link rel="stylesheet" href="${SITE_URL}/assets/dist/css/dataTables.bootstrap.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -56,7 +57,7 @@
                     <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                         <span class="sr-only">Toggle navigation</span>
                     </a>
-                    
+
                 </nav>
             </header>
             <!-- Left side column. contains the logo and sidebar -->
@@ -98,7 +99,7 @@
                         <li><a href="#"><i class="fa fa-eye"></i> <span>Workshop</span></a></li>
                         <li><a href="#"><i class="fa fa-eye"></i> <span>Career Counselling</span></a></li>
                         <li><a href="#"><i class="fa fa-eye"></i> <span>Campus Connection</span></a></li>
-                        
+
                     </ul>
                     <!-- /.sidebar-menu -->
                 </section>
@@ -113,7 +114,7 @@
                         <img src="${SITE_URL}/assets/img/logo_main.png" height="35px">
                         <small>Events</small>
                     </h1>
-                    
+
                 </section>
 
                 <!-- Main content -->
@@ -121,43 +122,43 @@
 
                     <!-- Your Page Content Here -->
 
-                
-
-            
-            
-
-            
 
 
 
 
-            <!--    <body>
-                    <div class="container">
-                        <nav class="navbar navbar-default">
-                            <div class="container-fluid">
-                                 Brand and toggle get grouped for better mobile display 
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-
-                                            example-navbar-collapse-1" aria-expanded="false">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-            
-            
-            
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                        <ul class="nav navbar-nav">
-                                            <a class="navbar-brand" href="${SITE_URL}">
-                                                <img alt="Brand" src="${SITE_URL}/assets/img/logo_main.png" height="27px">
-                                            </a>
-                                            <li class="active"><a href="#">Meetup <span class="sr-only">(current)</span></a></li>
-                                            <li><a href="#">Workshop</a></li>
-                                            <li><a href="#">Leaptalks</a></li>
-                                            <li><a href="#">Career Counselling</a></li>
-                                            <li><a href="#">Campus Connection</a></li>
-                                        </ul>
-                                    </div> /.navbar-collapse 
-                                </div> /.container-fluid 
-                        </nav>-->
+
+
+
+
+
+
+                    <!--    <body>
+                            <div class="container">
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                         Brand and toggle get grouped for better mobile display 
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-
+                                                    example-navbar-collapse-1" aria-expanded="false">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                    
+                    
+                    
+                                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                                <ul class="nav navbar-nav">
+                                                    <a class="navbar-brand" href="${SITE_URL}">
+                                                        <img alt="Brand" src="${SITE_URL}/assets/img/logo_main.png" height="27px">
+                                                    </a>
+                                                    <li class="active"><a href="#">Meetup <span class="sr-only">(current)</span></a></li>
+                                                    <li><a href="#">Workshop</a></li>
+                                                    <li><a href="#">Leaptalks</a></li>
+                                                    <li><a href="#">Career Counselling</a></li>
+                                                    <li><a href="#">Campus Connection</a></li>
+                                                </ul>
+                                            </div> /.navbar-collapse 
+                                        </div> /.container-fluid 
+                                </nav>-->
