@@ -19,3 +19,10 @@ and open the template in the editor.
     font-family: cursive;
    color: #4cae4c;
 }
+.main-footer{
+    text-align: right;
+    font-family: serif;
+    }
+    .main-footer, a{
+        color: yellowgreen;
+    }    

@@ -8,7 +8,7 @@
 <!-- Main Footer -->
 <footer class="main-footer">
     <!-- Default to the left -->
-    <strong>Copyright &copy; <a href="#">LEAPFROG ACADEMY</a></strong>
+    <strong>Copyright &copy; <a href="leapfrog.academy">LEAPFROG.ACADEMY</a></strong>
 </footer>
 </div>
 <!-- ./wrapper -->
