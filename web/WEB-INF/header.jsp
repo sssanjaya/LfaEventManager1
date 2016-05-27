@@ -27,7 +27,7 @@
               page. However, you can choose any other skin. Make sure you
               apply the skin class to the body tag so the changes take effect.
         -->
-        <link rel="stylesheet" href="${SITE_URL}/assets/dist/css/_all-skins.min.css">
+        <link rel="stylesheet" href="${SITE_URL}/assets/dist/css/style.css">
         <link rel="stylesheet" href="${SITE_URL}/assets/dist/css/skins/skin-blue.min.css">
         <link rel="stylesheet" href="${SITE_URL}/assets/dist/css/dataTables.bootstrap.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -92,13 +92,13 @@
 
                     <!-- Sidebar Menu -->
                     <ul class="sidebar-menu">
-                        <li class="header">HEADER</li>
+                        <li class="header">List of Events</li>
                         <!-- Optionally, you can add icons to the links -->
-                        <li class="active"><a href="#"><i class="fa fa-eye"></i> <span>Meetup</span></a></li>
-                        <li><a href="#"><i class="fa fa-eye"></i> <span>Leaptalks</span></a></li>
-                        <li><a href="#"><i class="fa fa-eye"></i> <span>Workshop</span></a></li>
-                        <li><a href="#"><i class="fa fa-eye"></i> <span>Career Counselling</span></a></li>
-                        <li><a href="#"><i class="fa fa-eye"></i> <span>Campus Connection</span></a></li>
+                        <li class="active"><a href="#"><i class="fa fa-table"></i> <span>Meetup</span></a></li>
+                        <li><a href="#"><i class="fa fa-table"></i> <span>Leaptalks</span></a></li>
+                        <li><a href="#"><i class="fa fa-table"></i> <span>Workshop</span></a></li>
+                        <li><a href="#"><i class="fa fa-table"></i> <span>Career Counselling</span></a></li>
+                        <li><a href="#"><i class="fa fa-table"></i> <span>Campus Connection</span></a></li>
 
                     </ul>
                     <!-- /.sidebar-menu -->
@@ -111,8 +111,8 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        <img src="${SITE_URL}/assets/img/logo_main.png" height="35px">
-                        <small>Events</small>
+                        <img class="img-responsive" src="${SITE_URL}/assets/img/logo_main.png">
+                        <p class="event-heading">- Events -</p>
                     </h1>
 
                 </section>
