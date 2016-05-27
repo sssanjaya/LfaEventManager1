@@ -112,7 +112,7 @@
                 <section class="content-header">
                     <h1>
                         <img class="img-responsive" src="${SITE_URL}/assets/img/logo_main.png">
-                        <p class="event-heading">- Events -</p>
+                        <p class="event-heading">--- Events ---</p>
                     </h1>
 
                 </section>
