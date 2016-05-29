@@ -29,11 +29,11 @@
     $(function () {
         $('#tableDemo').DataTable({
             "paging": true,
-            "lengthChange": false,
-            "searching": false,
-            "ordering": false,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
             "info": true,
-            "autoWidth": false
+            "autoWidth": true
         });
     });
 </script>

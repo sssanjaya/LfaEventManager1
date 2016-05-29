@@ -69,7 +69,7 @@
                     <!-- Sidebar user panel (optional) -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="${SITE_URL}/assets/dist/img/user8-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="${SITE_URL}/assets/dist/img/leapfrog.png" class="img-circle" alt="Leapfrog">
                         </div>
                         <div class="pull-left info">
                             <p>username</p>
