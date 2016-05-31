@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="SITE_URL" value="${pageContext.request.contextPath}"/>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -92,9 +93,9 @@
 
                     <!-- Sidebar Menu -->
                     <ul class="sidebar-menu">
-                        <li class="header">List of Events</li>
                         <!-- Optionally, you can add icons to the links -->
-                        <li class="active"><a href="#"><i class="fa fa-table"></i> <span>Meetup</span></a></li>
+                        <li class="active"><a href="#"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                        <li><a href="#"><i class="fa fa-table"></i> <span>Meetup</span></a></li>
                         <li><a href="#"><i class="fa fa-table"></i> <span>Leaptalks</span></a></li>
                         <li><a href="#"><i class="fa fa-table"></i> <span>Workshop</span></a></li>
                         <li><a href="#"><i class="fa fa-table"></i> <span>Career Counselling</span></a></li>
