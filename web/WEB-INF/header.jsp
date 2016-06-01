@@ -95,12 +95,13 @@
                     <ul class="sidebar-menu">
                         <!-- Optionally, you can add icons to the links -->
                         <li class="active"><a href="#"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-                        <li><a href="#"><i class="fa fa-table"></i> <span>Meetup</span></a></li>
-                        <li><a href="#"><i class="fa fa-table"></i> <span>Leaptalks</span></a></li>
-                        <li><a href="#"><i class="fa fa-table"></i> <span>Workshop</span></a></li>
-                        <li><a href="#"><i class="fa fa-table"></i> <span>Career Counselling</span></a></li>
-                        <li><a href="#"><i class="fa fa-table"></i> <span>Campus Connection</span></a></li>
-
+                        <li><a href="#"><i class="fa fa-bookmark"></i> <span>Event Bookings</span></a></li>
+                        <li><a href="#"><i class="fa fa-group"></i> <span>Meetup</span></a></li>
+                        <li><a href="#"><i class="fa fa-comments"></i> <span>Leaptalks</span></a></li>
+                        <li><a href="#"><i class="fa fa-wrench"></i> <span>Workshop</span></a></li>
+                        <li><a href="#"><i class="fa fa-smile-o"></i> <span>Career Counselling</span></a></li>
+                        <li><a href="#"><i class="fa fa-graduation-cap"></i> <span>Campus Connection</span></a></li>
+                        <li><a href="#"><i class="fa fa-at"></i> <span>About us</span></a></li>
                     </ul>
                     <!-- /.sidebar-menu -->
                 </section>
