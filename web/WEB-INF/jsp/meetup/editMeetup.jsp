@@ -1,6 +1,6 @@
 <%@include file="../../header.jsp" %>
 <h2>Edit Student</h2>
-<form:form action="${pageContext.request.contextPath}/update?id=${meetups.id}" method="post" modelAttribute="meetup">
+<form:form action="${pageContext.request.contextPath}/meetup/update?id=${meetups.id}" method="post" modelAttribute="meetup">
     <div class="form-group">
         <form:label path="name">Name:</form:label>
         <form:input type="text" path="name" required="required" placeholder="Enter meetup name" class="form-control" value="${meetups.name}"/>
@@ -17,6 +17,11 @@
         <form:label path="presenter">location:</form:label>
         <form:input type="text" path="location" required="required" placeholder="Enter the location" class="form-control" value="${meetups.location}"/>
     </div>
+    <div class="form-group">
+        <form:label path="status">Active </form:label>
+        <form:checkbox path="status"></form:checkbox>
+        </div>
+        </br>
         <a href="${pageContext.request.contextPath}/" class="btn btn-danger">Back</a>
     <button type="submit" class="btn btn-success">Save</button>
 </form:form>

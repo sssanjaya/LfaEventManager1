@@ -65,4 +65,10 @@ public class MeetupController {
        }
        return mv;
    }
+   @RequestMapping(value="update",method = RequestMethod.POST)
+   public String update(@ModelAttribute("meetup")Meetup meetup, @Context HttpServletRequest request){
+       meetup.setId(Integer.parseInt(request.getParameter("id")));
+       meetupService.update(meetup);
+       return "redirect:/meetup/index";
+   }
 }
