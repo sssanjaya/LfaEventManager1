@@ -44,41 +44,23 @@ public class Meetup implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
-    @Column(nullable = false)
+    @Column(name="id")
     private Integer id;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 100)
-    @Column(nullable = false, length = 100)
+    @Column(name="name")
     private String name;
-    @Basic(optional = false)
-    @NotNull
-    @Lob
-    @Size(min = 1, max = 65535)
-    @Column(nullable = false, length = 65535)
+    @Column(name="description")
     private String description;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 100)
-    @Column(nullable = false, length = 100)
+    @Column(name="presenter")
     private String presenter;
-    @Basic(optional = false)
-    @NotNull
-    @Column(name = "added_date", nullable = false)
+    @Column(name = "added_date", insertable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date addedDate;
-    @Column(name = "modified_date")
+    @Column(name = "modified_date",nullable = true)
     @Temporal(TemporalType.TIMESTAMP)
     private Date modifiedDate;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 100)
-    @Column(nullable = false, length = 100)
+    @Column(name="location")
     private String location;
-    @Basic(optional = false)
-    @NotNull
-    @Column(nullable = false)
+    @Column(name="status")
     private boolean status;
 
     public Meetup() {
@@ -88,12 +70,11 @@ public class Meetup implements Serializable {
         this.id = id;
     }
 
-    public Meetup(Integer id, String name, String description, String presenter, Date addedDate, String location, boolean status) {
+    public Meetup(Integer id, String name, String description, String presenter, String location, boolean status) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.presenter = presenter;
-        this.addedDate = addedDate;
         this.location = location;
         this.status = status;
     }
@@ -163,28 +144,8 @@ public class Meetup implements Serializable {
     }
 
     @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Meetup)) {
-            return false;
-        }
-        Meetup other = (Meetup) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
     public String toString() {
-        return "com.leapfrog.springhibernate.entity.Meetup[ id=" + id + " ]";
+        return "Meetup{" + "id=" + id + ", name=" + name + ", description=" + description + ", presenter=" + presenter + ", addedDate=" + addedDate + ", modifiedDate=" + modifiedDate + ", location=" + location + ", status=" + status + '}';
     }
     
 }

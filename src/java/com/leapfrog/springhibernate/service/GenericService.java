@@ -13,10 +13,15 @@ import java.util.List;
  * @param <T>
  */
 public interface GenericService<T> {
+
     void insert(T t);
+
     void update(T t);
+
     void delete(int id);
+
     List<T> getAll();
+
     T getById(int id);
-    
+
 }

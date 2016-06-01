@@ -12,11 +12,13 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 /**
  *
  * @author root
  */
+@Repository(value = "MeetupDAO")
 public class MeetupDAOImpl implements MeetupDAO {
     
     @Autowired
@@ -53,6 +55,7 @@ public class MeetupDAOImpl implements MeetupDAO {
     public List<Meetup> getAll() {
        session=sessionFactory.openSession();
        List<Meetup> meetupList = session.getNamedQuery("Meetup.findAll").list();
+       session.close();
        return meetupList;
     }
     
@@ -60,6 +63,7 @@ public class MeetupDAOImpl implements MeetupDAO {
     public Meetup getById(int id) {
         session = sessionFactory.openSession();
         Meetup meetup = (Meetup) session.get(Meetup.class, id);
+        //session.close();
         return meetup;
     }
     
