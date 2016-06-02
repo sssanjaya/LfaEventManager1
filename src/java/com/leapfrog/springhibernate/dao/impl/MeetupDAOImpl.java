@@ -47,8 +47,16 @@ public class MeetupDAOImpl implements MeetupDAO {
     @Override
     public void delete(int id) {
         session=sessionFactory.openSession();
-        session.delete(getById(id));
+        trans = session.beginTransaction();
+        Meetup mu=new Meetup();
+        mu.setId(id);
+        session.delete(mu);
+        trans.commit();
         session.close();
+        
+//        session=sessionFactory.openSession();
+//        session.delete(id);
+//        session.close();
     }
     
     @Override
